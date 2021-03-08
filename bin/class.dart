@@ -3,7 +3,8 @@ class Car {
   String color;
 
   // constructor
-  Car(int sts, String clr) {
+  // option
+  Car(int sts, [String clr]) {
     seats = sts;
     color = clr;
   }
