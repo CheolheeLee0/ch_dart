@@ -4,14 +4,17 @@ class Car {
 
   // constructor
   Car(int sts, String clr) {
-    this.seats = sts;
-    this.color = clr;
+    seats = sts;
+    color = clr;
+  }
+
+  printVars() {
+    print('seat: $seats, color: $color');
+    return null;
   }
 }
 
-main(List<String> args) {
+main(List<String> args) async {
   Car newCar = new Car(4, 'red');
-
-  print('seat: ${newCar.seats}');
-  print('color: ${newCar.color}');
+  newCar.printVars();
 }
