@@ -4,10 +4,8 @@ class Car {
 
   // constructor
   // option, default
-  Car({int sts, String clr = 'black'}) {
-    seats = sts;
-    color = clr;
-  }
+  // @required : 꼭 필요
+  Car({this.seats, this.color = 'black'});
 
   printVars() {
     print('seat: $seats, color: $color');
