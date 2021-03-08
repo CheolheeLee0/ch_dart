@@ -6,4 +6,7 @@ main(List<String> args) {
 print("double");
 print("cat" + "dog");
   ''');
+  var inner = 39452;
+  print('In the string ${inner}');
+  print('In the string 2.. $inner');
 }
