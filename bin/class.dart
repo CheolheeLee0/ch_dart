@@ -3,8 +3,8 @@ class Car {
   String color;
 
   // constructor
-  // option
-  Car(int sts, [String clr]) {
+  // option, default
+  Car({int sts, String clr = 'black'}) {
     seats = sts;
     color = clr;
   }
@@ -16,6 +16,6 @@ class Car {
 }
 
 main(List<String> args) async {
-  Car newCar = new Car(4, 'red');
+  Car newCar = new Car(clr: 'red', sts: 6);
   newCar.printVars();
 }
