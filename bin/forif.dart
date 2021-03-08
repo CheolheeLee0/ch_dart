@@ -1,5 +1,5 @@
 bool isEven(int x) {
-  if (x & 2 == 0) {
+  if (x % 2 == 0) {
     return true;
   } else {
     return false;
@@ -19,6 +19,6 @@ List<int> getEvenNumbers(Iterable<int> numbers) {
 
 main() {
   //
-  var numbers = List.generate(10, (i) => 1);
+  var numbers = List.generate(10, (i) => i);
   print(getEvenNumbers(numbers));
 }
